@@ -9,7 +9,7 @@
         Начните экономить прямо сейчас!
       </h3> -->
 			<h1 class="text-7xl font-bold text-slate-900 mt-5 relative">
-				Поиск тарифа
+				Поиск тарифа тут
 				<span
 					class="economy block mt-3 bg-clip-text bg-gradient-to-r from-indigo-500 to-violet-500"
 					>никогда не был</span
