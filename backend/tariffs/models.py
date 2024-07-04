@@ -3,21 +3,22 @@ from django.db import models
 
 # Create your models here.
 
+from django.db import models
+
 class Tariff(models.Model):
     name = models.CharField(max_length=100)
-    price = models.IntegerField(blank=True, null=True, default='')
-    minutes = models.IntegerField(blank=True, null=True, default='')
-    gigabytes = models.IntegerField(blank=True, null=True, default='')
+    price = models.IntegerField(blank=True, null=True)
+    minutes = models.IntegerField(blank=True, null=True)
+    gigabytes = models.IntegerField(blank=True, null=True)
     bonus = models.CharField(max_length=100, blank=True, default='')
-    sms = models.IntegerField(blank=True, null=True, default='')
+    sms = models.IntegerField(blank=True, null=True)
     link = models.CharField(max_length=100, blank=True, default='')
     operator = models.CharField(max_length=100)
     head = models.CharField(max_length=100)
     bonustext = models.CharField(max_length=1000, blank=True, default='')
-    speed = models.IntegerField(blank=True, null=True, default='')
-    tv = models.IntegerField(blank=True, null=True, default='')
-    isFavotite = models.BooleanField(default=False)
-
+    speed = models.IntegerField(blank=True, null=True)
+    tv = models.IntegerField(blank=True, null=True)
+    isFavorite = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
